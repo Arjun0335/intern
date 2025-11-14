@@ -1,6 +1,6 @@
 module.exports = {
-  // ... other config
+  transpilePackages: ['react-live'],
   experimental: {
-    swcMinify: false, // Disable SWC for better TypeScript support in react-live
+    forceSwcTransforms: false, // Force Babel for better compatibility with react-live
   },
 }
