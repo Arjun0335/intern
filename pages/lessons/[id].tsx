@@ -39,7 +39,11 @@ export default function LessonPage() {
         Back
       </button>
       
-      <LiveProvider code={code} noInline>
+      <LiveProvider 
+        code={code} 
+        scope={{ React, useState, useEffect }} // Provide necessary dependencies
+        noInline
+      >
         <LivePreview />
       </LiveProvider>
     </div>
